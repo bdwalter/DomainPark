@@ -3,46 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenContext</title>
+    <title>opencontext.com and opencontext.ai are for sale</title>
+    <meta name="description" content="The domains opencontext.com and opencontext.ai are available for acquisition. Contact domain@opencontext.com.">
+    <meta property="og:title" content="opencontext.com and opencontext.ai are for sale">
+    <meta property="og:description" content="Available for acquisition. Contact domain@opencontext.com.">
+    <meta name="theme-color" content="#0b1a2c">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap">
     <style>
+        :root {
+            --bg: #0b1a2c;
+            --panel: #10233a;
+            --line: #22405f;
+            --fg: #e8eef6;
+            --dim: #8aa0b8;
+            --key: #7fb4e6;
+            --ok: #9fd6a0;
+            --grad: linear-gradient(90deg, #9b8fd0, #7ab8e6, #9fd6a0, #ecd77a, #ee9b6c);
+            color-scheme: dark;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html, body {
+            min-height: 100%;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background: #fff;
+            font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+            background: var(--bg);
+            color: var(--fg);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            line-height: 1.5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem clamp(1.25rem, 5vw, 4rem);
+            font-size: 0.8125rem;
+            color: var(--dim);
+        }
+
+        header img {
+            width: 32px;
+            height: auto;
+            display: block;
         }
 
         main {
             flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: grid;
+            align-content: center;
+            gap: 2rem;
+            padding: 1.5rem clamp(1.25rem, 5vw, 4rem) 3rem;
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
         }
 
-        img {
-            max-width: 320px;
-            width: 80%;
-            height: auto;
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.8125rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--dim);
+        }
+
+        .status::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--ok);
+            box-shadow: 0 0 0 4px rgba(159, 214, 160, 0.16);
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: clamp(2rem, 8.5vw, 5.5rem);
+            line-height: 1.02;
+            letter-spacing: -0.03em;
+            overflow-wrap: anywhere;
+        }
+
+        h1 .tld {
+            color: transparent;
+            background: var(--grad);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .gradline {
+            height: 3px;
+            width: 100%;
+            max-width: 480px;
+            background: var(--grad);
+            border-radius: 2px;
+        }
+
+        dl {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            gap: 0.5rem 1.75rem;
+            font-size: 0.875rem;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 1.25rem 1.5rem;
+            max-width: 600px;
+        }
+
+        dt {
+            color: var(--key);
+        }
+
+        dd {
+            min-width: 0;
+            overflow-wrap: anywhere;
+        }
+
+        dd a {
+            color: inherit;
+        }
+
+        .cta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.875rem;
+        }
+
+        .cta a {
+            color: var(--bg);
+            background: var(--fg);
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .cta a:hover {
+            background: #ffffff;
+        }
+
+        a:focus-visible {
+            outline: 2px solid var(--key);
+            outline-offset: 3px;
+        }
+
+        .cta span {
+            color: var(--dim);
         }
 
         footer {
-            text-align: center;
-            padding: 2rem;
-            color: #999;
-            font-size: 0.875rem;
+            padding: 1.5rem clamp(1.25rem, 5vw, 4rem);
+            color: var(--dim);
+            font-size: 0.75rem;
+        }
+
+        @media (max-width: 560px) {
+            dl {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            dd {
+                margin-bottom: 0.75rem;
+            }
+
+            dd:last-child {
+                margin-bottom: 0;
+            }
         }
     </style>
 </head>
 <body>
+    <header>
+        <img src="images/mark.png" alt="OpenContext">
+        <span>status: for sale</span>
+    </header>
     <main>
-        <img src="images/logo.png" alt="OpenContext logo">
+        <p class="status">Available for acquisition</p>
+        <h1>opencontext<span class="tld">.com</span><br>opencontext<span class="tld">.ai</span></h1>
+        <div class="gradline" aria-hidden="true"></div>
+        <dl>
+            <dt>names</dt>
+            <dd>opencontext.com, opencontext.ai</dd>
+            <dt>sold as</dt>
+            <dd>pair preferred, offers on either considered</dd>
+            <dt>transfer</dt>
+            <dd>via escrow, buyer's choice of registrar</dd>
+            <dt>contact</dt>
+            <dd><a href="mailto:domain@opencontext.com">domain@opencontext.com</a></dd>
+        </dl>
+        <div class="cta">
+            <a href="mailto:domain@opencontext.com?subject=Offer%20for%20opencontext%20domains">Make an offer</a>
+            <span>Replies within two business days</span>
+        </div>
     </main>
     <footer>
         &copy; 2026 OpenContext
